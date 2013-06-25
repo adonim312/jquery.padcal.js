@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+
+		<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>-->
+		<script src="js/jquery.min.js"></script>
+		<!--<script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>-->
+		<script src="js/prettify.min.js"></script>
+		<script src="js/jquery.padcal.js"></script>
+		<script src="js/sample.js"></script>
+
+		<!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css"></link>-->
+		<link rel="stylesheet" href="css/prettify.min.css"></link>
+		<link rel="stylesheet" href="css/jquery.padcal.css"></link>
+		<link rel="stylesheet" href="css/sample.css"></link>
+
+		<title>page-a-day calendar demo</title>
+	</head>
+
+	<body>
+
+		<header class="box">
+			<h1>jquery.<span>padcal</span>.js<br>(<span>p</span>age-<span>a</span>-<span>d</span>ay <span>cal</span>endar)</h1>
+			<p>日めくりカレンダー jQuery プラグイン</p>
+		</header>
+
+		<section class="box">
+			<section>
+				<h2>概要</h2>
+				<ul>
+					<li>日めくりカレンダー風 UI です。</li>
+					<li>jQuery 1.6.5 以上に依存です。</li>
+					<li>IE 10, Chrome 27, Firefox 21 で動作確認しています。</li>
+					<li>&lt;span&gt; と &lt;input&gt; に対応しています。ゆえに inline です。</li>
+					<li>&lt;span&gt; なら表示だけを日めくりカレンダー風にします。</li>
+					<li>&lt;input&gt; なら日めくりもできます。 value 属性 = 日付です。</li>
+					<li>type 属性は radio/checkbox/file/time/number 以外でお願いします。 text が無難です。</li>
+					<li>日付のフォーマットは "yyyy-MM-dd" <strong>のみ</strong>です。</li>
+					<li>タイムゾーンは JST <strong>のみ</strong>です。</li>
+					<li><a href="http://sugarjs.com/" target="_blank">suger.js</a> 依存とかにすれば、柔軟な対応ができると思いますが・・・。</li>
+					<li>デフォルトでは土曜日は青系、日曜日は赤系の配色になっています。</li>
+					<li>祝祭日には未対応です。</li>
+					<li>見た目は css にしていますので、カスタマイズしてください。</li>
+					<li>需要は極僅と思いますが MIT Lisense でご利用いただけます。</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>デモ</h2>
+				<table>
+					<tr>
+						<td><span id="padcal-sample1"></span></td>
+						<td>&lt;span&gt; なら表示のみ。</td>
+					</tr>
+					<tr>
+						<td><input id="padcal-sample2" type="text" /></td>
+						<td>
+							&lt;input&gt; なら日めくり、value 属性の get/set が可能。<br>
+							<input type="button" value="get" id="get" /><input type="button" value="set" id="set" /><input type="date" placeholder="yyyy-MM-dd" />
+						</td>
+					</tr>
+				</table>
+			</section>
+
+			<section>
+				<h2>使い方</h2>
+				<dl>
+					<dt>HTML</dt>
+					<dd><pre class="prettyprint">
+&lt;head&gt;
+  &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/[バージョン]/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="[任意のjsフォルダ]/jquery.padcal.js"&gt;&lt;/script&gt;
+  &lt;link rel="stylesheet" href="[任意のcssフォルダ]/jquery.padcal.css"&gt;&lt;/link&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- span の場合 デフォルトはシステム日付 --&gt;
+  &lt;span id="padcal-sample1"&gt;&lt;/span&gt;
+  &lt;!-- 初期値を持たせることもできます --&gt;
+  &lt;!-- &lt;span id="padcal-sample1"&gt;2013-06-25&lt;/span&gt; --&gt;
+
+  &lt;!-- input の場合 デフォルトはシステム日付 ※ type は text が無難 --&gt;
+  &lt;input id="padcal-sample2" type="text" /&gt;
+  &lt;!-- 初期値を持たせることもできます --&gt;
+  &lt;!-- &lt;input id="padcal-sample2" type="text" value="2013-06-25" /&gt; --&gt;
+&lt;/body&gt;
+					</pre></dd>
+					<dt>Javascript</dt>
+					<dd><pre class="prettyprint">
+$(function(){
+  $("#padcal-sample1").padcal();
+  $("#padcal-sample2").padcal();
+
+  // input の value の取得
+  window.alert($("#padcal-sample2").val());
+  // input の value の設定、 change イベント発火のため change() も発行してください
+  $("#padcal-sample2").val("2013-06-01").change();
+});
+					</pre></dd>
+				</dl>
+			</section>
+
+			<section>
+				<h2>開発/ダウンロード</h2>
+				<dl>
+					<dt>Github</dt>
+					<dd><a href="https://github.com/adonim312/jquery.padcal.js" target="_blank">https://github.com/adonim312/jquery.padcal.js</a></dd>
+				</dl>
+			</section>
+
+			<footer>
+				<address>Powered by <a href="https://twitter.com/adonim312">@adonim312</a></address>
+			</footer>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+/* line 5, ../sass/sample.scss */
+.box
+{
+  width: 600px;
+  margin: 0 auto;
+}
+
+header > h1 > span
+{
+	color: darkred;
+}
+
+section.box > section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+}
+
+section.box > section h2 {
+  margin: 0;
+  padding: 0;
+}
+
+pre.prettyprint
+{
+  overflow: auto;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+footer
+{
+	text-align: right;
+}
