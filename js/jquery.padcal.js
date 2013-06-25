@@ -81,8 +81,8 @@ THE SOFTWARE.
 								.html("<div></div><div>" + year2 + "/" + month2 + "</div>" + day2 + "</div>" +
 									"<div class='padcal-" + w[date2.getDay() == 0 ? 6 : date2.getDay() - 1] + " padcal-copy'>" +
 										"<div></div>" +
-										"<div>" + year2 + "/" + month2 + "</div>" +
-									day2)
+										"<div>" + Number(y2) + "/" + Number(m2) + "</div>" +
+									Number(d2))
 								.children("div.padcal-copy")
 									.animate({
 											top: "0px",
