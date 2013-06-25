@@ -1,4 +1,10 @@
-/* line 5, ../sass/sample.scss */
+@charset "utf-8";
+
+*
+{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, 
+}
+
 .box
 {
   width: 600px;
