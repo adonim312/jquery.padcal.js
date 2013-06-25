@@ -27,7 +27,7 @@ THE SOFTWARE.
 @charset "UTF-8";
 /* line 5, ../sass/jquery.padcal.scss */
 .padcal + div, input.padcal + div > div.padcal-copy {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "ƒƒCƒŠƒI", Meiryo, "‚l‚r ‚oƒSƒVƒbƒN", Helvetica, Arial, Verdana, sans-serif;
   display: inline-block;
   width: 50px;
   height: 52px;
