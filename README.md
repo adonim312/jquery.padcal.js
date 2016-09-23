@@ -22,7 +22,7 @@ jquery.padcal.js
 
 ### デモ
 下記参照願います。  
-[サンプル](http://goo.gl/l8U0u "サンプル")
+[サンプル](https://static-adonim312.firebaseapp.com/ "サンプル")
 
 ### 使い方
 HTML  
