@@ -8,9 +8,9 @@ jquery.padcal.js
 * 日めくりカレンダー風 UI です。
 * jQuery 1.6.5 以上に依存です。
 * IE 10, Chrome 27, Firefox 21 で動作確認しています。
-* <span> と <input> に対応しています。ゆえに inline です。
-* <span> なら表示だけを日めくりカレンダー風にします。
-* <input> なら日めくりもできます。 value 属性 = 日付です。
+* &lt;span&gt; と &lt;input&gt; に対応しています。ゆえに inline です。
+* &lt;span&gt; なら表示だけを日めくりカレンダー風にします。
+* &lt;input&gt; なら日めくりもできます。 value 属性 = 日付です。
 * type 属性は radio/checkbox/file/time/number 以外でお願いします。 text が無難です。
 * 日付のフォーマットは “yyyy-MM-dd” のみです。
 * タイムゾーンは JST のみです。
